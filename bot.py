@@ -14,7 +14,7 @@ app = Flask(__name__)
 
 def send_daily_forecast():
     tomorrow = datetime.now() + timedelta(days=1)
-    message = f"Прогнозы на {tomorrow.strftime('%d.%m.%Y')}:
+    message = f"Прогнозы на" {tomorrow.strftime('%d.%m.%Y')}:
 1. Матч X - Победа за 1.95\n2. Матч Y - Тотал больше 2.5 за 1.75"
     bot.send_message(CHAT_ID, message)
 
